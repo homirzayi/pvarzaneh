@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Vazir;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../Fonts/Vazir_p30download.com.eot");
+  src: url("../Fonts/Vazir_p30download.com.eot") format("embedded-opentype"),
+    url("../Fonts/Vazir_p30download.com.woff2") format("woff2"),
+    url("../Fonts/Vazir_p30download.com.woff") format("woff"),
+    url("../Fonts/Vazir_p30download.com.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  font-weight: 100;
+  font-style: normal;
+  src: url("../Fonts/Vazir-Thin_p30download.com.eot");
+  src: url("../Fonts/Vazir-Thin_p30download.com.eot")
+      format("embedded-opentype"),
+    url("../Fonts/Vazir-Thin_p30download.com.woff2") format("woff2"),
+    url("../Fonts/Vazir-Thin_p30download.com.woff") format("woff"),
+    url("../Fonts/Vazir-Thin_p30download.com.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../Fonts/Vazir-Light_p30download.com.eot");
+  src: url("../Fonts/Vazir-Light_p30download.com.eot")
+      format("embedded-opentype"),
+    url("../Fonts/Vazir-Light_p30download.com.woff2") format("woff2"),
+    url("../Fonts/Vazir-Light_p30download.com.woff") format("woff"),
+    url("../Fonts/Vazir-Light_p30download.com.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../Fonts/Vazir-Medium_p30download.com.eot");
+  src: url("../Fonts/Vazir-Medium_p30download.com.eot")
+      format("embedded-opentype"),
+    url("../Fonts/Vazir-Medium_p30download.com.woff2") format("woff2"),
+    url("../Fonts/Vazir-Medium_p30download.com.woff") format("woff"),
+    url("../Fonts/Vazir-Medium_p30download.com.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../Fonts/Vazir-Bold_p30download.com.eot");
+  src: url("../Fonts/Vazir-Bold_p30download.com.eot")
+      format("embedded-opentype"),
+    url("../Fonts/Vazir-Bold_p30download.com.woff2") format("woff2"),
+    url("../Fonts/Vazir-Bold_p30download.com.woff") format("woff"),
+    url("../Fonts/Vazir-Bold_p30download.com.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../Fonts/Vazir-Bold_p30download.com.eot");
+  src: url("../Fonts/Vazir-Bold_p30download.com.eot")
+      format("embedded-opentype"),
+    url("../Fonts/Vazir-Bold_p30download.com.woff2") format("woff2"),
+    url("../Fonts/Vazir-Bold_p30download.com.woff") format("woff"),
+    url("../Fonts/Vazir-Bold_p30download.com.ttf") format("truetype");
+  font-display: swap;
+}

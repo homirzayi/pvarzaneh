@@ -79,4 +79,11 @@
 body {
   font-family: "Vazir", Arial, sans-serif;
   font-weight: 500;
+  background: rgb(112, 105, 232);
+  background: linear-gradient(
+    180deg,
+    rgba(112, 105, 232, 1) 0%,
+    rgba(143, 143, 226, 1) 24%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }

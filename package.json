@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
+    "lucide-react": "^0.292.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
-    "react-router-dom": "^6.18.0"
+    "react-router-dom": "^6.18.0",
+    "react-simple-image-slider": "^2.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

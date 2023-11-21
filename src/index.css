@@ -88,3 +88,8 @@ body {
   ); */
   background: #f9f9f9;
 }
+
+.dark {
+  background: #000;
+  color: white;
+}

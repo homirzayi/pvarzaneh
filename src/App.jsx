@@ -5,7 +5,7 @@ import Novbat from "./pages/Novbat";
 
 function App() {
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white">
+    <div className="dark:bg-black dark:text-white">
       <BrowserRouter>
         <Navbar />
         <Routes>

@@ -44,6 +44,7 @@ function ImageSlider({ images }) {
           height: "100%",
           display: "flex",
           overflow: "hidden",
+          borderRadius: "10px",
         }}
       >
         {images.map(({ url, alt }, index) => (
@@ -53,7 +54,7 @@ function ImageSlider({ images }) {
             alt={alt}
             aria-hidden={imageIndex !== index}
             className="img-slider-img"
-            style={{ translate: `${-100 * imageIndex}%` }}
+            style={{ translate: `${100 * imageIndex}%` }}
           />
         ))}
       </div>

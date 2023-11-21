@@ -5,13 +5,15 @@ import Novbat from "./pages/Novbat";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/novbat" element={<Novbat />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="bg-white text-black dark:bg-black dark:text-white">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/novbat" element={<Novbat />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

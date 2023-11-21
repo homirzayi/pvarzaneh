@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose, AiFillHome } from "react-icons/ai";
 import { BiSolidBookAdd, BiSolidContact } from "react-icons/bi";
 import { GiAbstract042, GiNotebook } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
+import DarkMode from "./DarkMode/DarkMode";
 
 const navItems = [
   { name: "صفحه اصلی", icon: <AiFillHome />, href: "/" },
@@ -32,6 +33,16 @@ const navItems = [
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(
+    function () {
+      darkMode
+        ? document.documentElement.classList.add("dark")
+        : document.documentElement.classList.remove("dark");
+    },
+    [darkMode]
+  );
 
   return (
     <nav
@@ -41,7 +52,7 @@ function Navbar() {
       }}
       className=" border-b w-full"
     >
-      <div className=" h-16 w-full  flex justify-between items-center mx-auto px-4 text-white">
+      <div className="relative h-16 w-full  flex justify-between items-center mx-auto px-4 text-white">
         <button
           className=" rounded-full lg:hidden hover:bg-slate-200 hover:text-black text-2xl border p-2  duration-500"
           onClick={() => setMobileMenuOpen(true)}
@@ -70,11 +81,21 @@ function Navbar() {
             ))}
           </div>
         </div>
-        <img
-          src={logo}
-          alt="پژوهشسرای دانش آموزش شهرستان ورزنه"
-          className=" h-16 object-contain w-auto"
-        />
+
+        <div className="flex items-center">
+          <div className="flex gap-2 items-center">
+            <p>{darkMode ? "پوسته تاریک" : "پوسته روشن"}</p>
+            <DarkMode
+              darkMode={darkMode}
+              handleChange={() => setDarkMode(!darkMode)}
+            />
+          </div>
+          <img
+            src={logo}
+            alt="پژوهشسرای دانش آموزش شهرستان ورزنه"
+            className="justify-end h-16 object-contain w-auto"
+          />
+        </div>
       </div>
 
       {mobileMenuOpen && (
